@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BookStoreProject.DAL\BookStoreProject.DAL.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Managers\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
