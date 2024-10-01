@@ -1,5 +1,8 @@
+using BookStoreProject.BLL;
+using BookStoreProject.BLL.Managers;
+using BookStoreProject.DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
-using OnlineBookStore.DAL.Data;
+using BookStoreProject.DAL.Data;
 
 namespace BookStoreProject.MVC
 {
@@ -11,9 +14,13 @@ namespace BookStoreProject.MVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-            builder.Services.AddDbContext<BookStoreDbContext>(options =>
-                options.UseSqlServer(connectionString));
+
+            builder.Services.AddDbContext<BookStoreDbContext>(options => options.UseSqlServer(
+                  builder.Configuration.GetConnectionString("DefaultConnection"),
+                  b => b.MigrationsAssembly(typeof(BookStoreDbContext).Assembly.FullName)));
+
+            builder.Services.AddTransient(typeof(IBaseRepository<>), typeof(Repository<>));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
