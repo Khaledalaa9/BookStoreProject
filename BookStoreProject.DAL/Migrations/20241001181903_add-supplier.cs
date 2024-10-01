@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace BookStoreProject.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class addsupplier : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -235,29 +235,29 @@ namespace BookStoreProject.DAL.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            //migrationBuilder.CreateTable(
-            //    name: "AuthorBook",
-            //    columns: table => new
-            //    {
-            //        AuthorId = table.Column<int>(type: "int", nullable: false),
-            //        BooksId = table.Column<int>(type: "int", nullable: false)
-            //    },
-            //    constraints: table =>
-            //    {
-            //        table.PrimaryKey("PK_AuthorBook", x => new { x.AuthorId, x.BooksId });
-            //        table.ForeignKey(
-            //            name: "FK_AuthorBook_Authors_AuthorId",
-            //            column: x => x.AuthorId,
-            //            principalTable: "Authors",
-            //            principalColumn: "Id",
-            //            onDelete: ReferentialAction.Cascade);
-            //        table.ForeignKey(
-            //            name: "FK_AuthorBook_Books_BooksId",
-            //            column: x => x.BooksId,
-            //            principalTable: "Books",
-            //            principalColumn: "Id",
-            //            onDelete: ReferentialAction.Cascade);
-            //    });
+            migrationBuilder.CreateTable(
+                name: "AuthorBook",
+                columns: table => new
+                {
+                    AuthorId = table.Column<int>(type: "int", nullable: false),
+                    BooksId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AuthorBook", x => new { x.AuthorId, x.BooksId });
+                    table.ForeignKey(
+                        name: "FK_AuthorBook_Authors_AuthorId",
+                        column: x => x.AuthorId,
+                        principalTable: "Authors",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_AuthorBook_Books_BooksId",
+                        column: x => x.BooksId,
+                        principalTable: "Books",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
 
             migrationBuilder.CreateTable(
                 name: "BookAuthors",
@@ -283,29 +283,29 @@ namespace BookStoreProject.DAL.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            //migrationBuilder.CreateTable(
-            //    name: "BookOrder",
-            //    columns: table => new
-            //    {
-            //        BooksId = table.Column<int>(type: "int", nullable: false),
-            //        OrdersId = table.Column<int>(type: "int", nullable: false)
-            //    },
-            //    constraints: table =>
-            //    {
-            //        table.PrimaryKey("PK_BookOrder", x => new { x.BooksId, x.OrdersId });
-            //        table.ForeignKey(
-            //            name: "FK_BookOrder_Books_BooksId",
-            //            column: x => x.BooksId,
-            //            principalTable: "Books",
-            //            principalColumn: "Id",
-            //            onDelete: ReferentialAction.Cascade);
-            //        table.ForeignKey(
-            //            name: "FK_BookOrder_Orders_OrdersId",
-            //            column: x => x.OrdersId,
-            //            principalTable: "Orders",
-            //            principalColumn: "Id",
-            //            onDelete: ReferentialAction.Cascade);
-            //    });
+            migrationBuilder.CreateTable(
+                name: "BookOrder",
+                columns: table => new
+                {
+                    BooksId = table.Column<int>(type: "int", nullable: false),
+                    OrdersId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BookOrder", x => new { x.BooksId, x.OrdersId });
+                    table.ForeignKey(
+                        name: "FK_BookOrder_Books_BooksId",
+                        column: x => x.BooksId,
+                        principalTable: "Books",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_BookOrder_Orders_OrdersId",
+                        column: x => x.OrdersId,
+                        principalTable: "Orders",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
 
             migrationBuilder.CreateTable(
                 name: "BookOrders",
@@ -322,38 +322,38 @@ namespace BookStoreProject.DAL.Migrations
                         column: x => x.BookId,
                         principalTable: "Books",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_BookOrders_Orders_OrderId",
                         column: x => x.OrderId,
                         principalTable: "Orders",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
-            //migrationBuilder.CreateTable(
-            //    name: "BookPurchase",
-            //    columns: table => new
-            //    {
-            //        BooksId = table.Column<int>(type: "int", nullable: false),
-            //        PurchasesId = table.Column<int>(type: "int", nullable: false)
-            //    },
-            //    constraints: table =>
-            //    {
-            //        table.PrimaryKey("PK_BookPurchase", x => new { x.BooksId, x.PurchasesId });
-            //        table.ForeignKey(
-            //            name: "FK_BookPurchase_Books_BooksId",
-            //            column: x => x.BooksId,
-            //            principalTable: "Books",
-            //            principalColumn: "Id",
-            //            onDelete: ReferentialAction.Cascade);
-            //        table.ForeignKey(
-            //            name: "FK_BookPurchase_Purchases_PurchasesId",
-            //            column: x => x.PurchasesId,
-            //            principalTable: "Purchases",
-            //            principalColumn: "Id",
-            //            onDelete: ReferentialAction.Cascade);
-            //    });
+            migrationBuilder.CreateTable(
+                name: "BookPurchase",
+                columns: table => new
+                {
+                    BooksId = table.Column<int>(type: "int", nullable: false),
+                    PurchasesId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BookPurchase", x => new { x.BooksId, x.PurchasesId });
+                    table.ForeignKey(
+                        name: "FK_BookPurchase_Books_BooksId",
+                        column: x => x.BooksId,
+                        principalTable: "Books",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_BookPurchase_Purchases_PurchasesId",
+                        column: x => x.PurchasesId,
+                        principalTable: "Purchases",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
 
             migrationBuilder.CreateTable(
                 name: "BookPurchases",
@@ -379,30 +379,30 @@ namespace BookStoreProject.DAL.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            //migrationBuilder.CreateIndex(
-            //    name: "IX_AuthorBook_BooksId",
-            //    table: "AuthorBook",
-            //    column: "BooksId");
+            migrationBuilder.CreateIndex(
+                name: "IX_AuthorBook_BooksId",
+                table: "AuthorBook",
+                column: "BooksId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_BookAuthors_AuthorId",
                 table: "BookAuthors",
                 column: "AuthorId");
 
-            //migrationBuilder.CreateIndex(
-            //    name: "IX_BookOrder_OrdersId",
-            //    table: "BookOrder",
-            //    column: "OrdersId");
+            migrationBuilder.CreateIndex(
+                name: "IX_BookOrder_OrdersId",
+                table: "BookOrder",
+                column: "OrdersId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_BookOrders_OrderId",
                 table: "BookOrders",
                 column: "OrderId");
 
-            //migrationBuilder.CreateIndex(
-            //    name: "IX_BookPurchase_PurchasesId",
-            //    table: "BookPurchase",
-            //    column: "PurchasesId");
+            migrationBuilder.CreateIndex(
+                name: "IX_BookPurchase_PurchasesId",
+                table: "BookPurchase",
+                column: "PurchasesId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_BookPurchases_PurchaseId",
@@ -454,20 +454,20 @@ namespace BookStoreProject.DAL.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            //migrationBuilder.DropTable(
-            //    name: "AuthorBook");
+            migrationBuilder.DropTable(
+                name: "AuthorBook");
 
             migrationBuilder.DropTable(
                 name: "BookAuthors");
 
-            //migrationBuilder.DropTable(
-            //    name: "BookOrder");
+            migrationBuilder.DropTable(
+                name: "BookOrder");
 
             migrationBuilder.DropTable(
                 name: "BookOrders");
 
-            //migrationBuilder.DropTable(
-            //    name: "BookPurchase");
+            migrationBuilder.DropTable(
+                name: "BookPurchase");
 
             migrationBuilder.DropTable(
                 name: "BookPurchases");
