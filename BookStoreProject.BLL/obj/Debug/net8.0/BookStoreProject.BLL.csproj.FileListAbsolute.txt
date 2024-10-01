@@ -1,0 +1,15 @@
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\bin\Debug\net8.0\BookStoreProject.BLL.deps.json
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\bin\Debug\net8.0\BookStoreProject.BLL.dll
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\bin\Debug\net8.0\BookStoreProject.BLL.pdb
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\bin\Debug\net8.0\BookStoreProject.DAL.dll
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\bin\Debug\net8.0\BookStoreProject.DAL.pdb
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.csproj.AssemblyReference.cache
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.AssemblyInfoInputs.cache
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.AssemblyInfo.cs
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.csproj.CoreCompileInputs.cache
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStor.E6693A41.Up2Date
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.dll
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\refint\BookStoreProject.BLL.dll
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.pdb
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\ref\BookStoreProject.BLL.dll

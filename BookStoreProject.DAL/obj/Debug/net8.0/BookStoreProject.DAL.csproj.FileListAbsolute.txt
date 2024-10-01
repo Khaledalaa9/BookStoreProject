@@ -1,0 +1,14 @@
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\bin\Debug\net8.0\BookStoreProject.DAL.deps.json
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\bin\Debug\net8.0\BookStoreProject.DAL.runtimeconfig.json
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\bin\Debug\net8.0\BookStoreProject.DAL.dll
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\bin\Debug\net8.0\BookStoreProject.DAL.pdb
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.csproj.AssemblyReference.cache
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.AssemblyInfoInputs.cache
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.AssemblyInfo.cs
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.csproj.CoreCompileInputs.cache
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.dll
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\refint\BookStoreProject.DAL.dll
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.pdb
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.genruntimeconfig.cache
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\ref\BookStoreProject.DAL.dll

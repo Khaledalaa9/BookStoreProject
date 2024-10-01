@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.dal\\data\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|solutionrelative:bookstoreproject.dal\\data\\bookstoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.dal\\bookstoreproject.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|solutionrelative:bookstoreproject.dal\\bookstoreproject.dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1831B67-C56A-49A9-B543-3B4776E3C052}|BookStoreProject.MVC\\BookStoreProject.MVC.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1831B67-C56A-49A9-B543-3B4776E3C052}|BookStoreProject.MVC\\BookStoreProject.MVC.csproj|solutionrelative:bookstoreproject.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1831B67-C56A-49A9-B543-3B4776E3C052}|BookStoreProject.MVC\\BookStoreProject.MVC.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F1831B67-C56A-49A9-B543-3B4776E3C052}|BookStoreProject.MVC\\BookStoreProject.MVC.csproj|solutionrelative:bookstoreproject.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.dal\\data\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|solutionrelative:bookstoreproject.dal\\data\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.dal\\data\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|solutionrelative:bookstoreproject.dal\\data\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.dal\\data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|solutionrelative:bookstoreproject.dal\\data\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.dal\\data\\models\\bookpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|solutionrelative:bookstoreproject.dal\\data\\models\\bookpurchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.dal\\data\\models\\bookorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|solutionrelative:bookstoreproject.dal\\data\\models\\bookorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.dal\\data\\models\\bookauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|solutionrelative:bookstoreproject.dal\\data\\models\\bookauthor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|c:\\users\\khale\\source\\repos\\bookstoreproject\\bookstoreproject.dal\\data\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0C0D262-4931-4EC7-B838-AAA66E034CB9}|BookStoreProject.DAL\\BookStoreProject.DAL.csproj|solutionrelative:bookstoreproject.dal\\data\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.MVC\\appsettings.json",
+              "RelativeDocumentMoniker": "BookStoreProject.MVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.MVC\\appsettings.json",
+              "RelativeToolTip": "BookStoreProject.MVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-01T13:17:37.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "BookStoreProject.MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.MVC\\Program.cs",
+              "RelativeToolTip": "BookStoreProject.MVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:16:47.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookStoreDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\BookStoreDbContext.cs",
+              "RelativeDocumentMoniker": "BookStoreProject.DAL\\Data\\BookStoreDbContext.cs",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\BookStoreDbContext.cs",
+              "RelativeToolTip": "BookStoreProject.DAL\\Data\\BookStoreDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:15:07.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookStoreProject.DAL",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
+              "RelativeDocumentMoniker": "BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
+              "RelativeToolTip": "BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-01T13:12:04.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "BookStoreProject.DAL\\Data\\Models\\Supplier.cs",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\Supplier.cs",
+              "RelativeToolTip": "BookStoreProject.DAL\\Data\\Models\\Supplier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:14:50.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\Publisher.cs",
+              "RelativeDocumentMoniker": "BookStoreProject.DAL\\Data\\Models\\Publisher.cs",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\Publisher.cs",
+              "RelativeToolTip": "BookStoreProject.DAL\\Data\\Models\\Publisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:14:32.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookPurchase.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\BookPurchase.cs",
+              "RelativeDocumentMoniker": "BookStoreProject.DAL\\Data\\Models\\BookPurchase.cs",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\BookPurchase.cs",
+              "RelativeToolTip": "BookStoreProject.DAL\\Data\\Models\\BookPurchase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:13:57.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookOrder.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\BookOrder.cs",
+              "RelativeDocumentMoniker": "BookStoreProject.DAL\\Data\\Models\\BookOrder.cs",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\BookOrder.cs",
+              "RelativeToolTip": "BookStoreProject.DAL\\Data\\Models\\BookOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:13:49.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookAuthor.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\BookAuthor.cs",
+              "RelativeDocumentMoniker": "BookStoreProject.DAL\\Data\\Models\\BookAuthor.cs",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\BookAuthor.cs",
+              "RelativeToolTip": "BookStoreProject.DAL\\Data\\Models\\BookAuthor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:13:37.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "BookStoreProject.DAL\\Data\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\Book.cs",
+              "RelativeToolTip": "BookStoreProject.DAL\\Data\\Models\\Book.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwB8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:13:24.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "BookStoreProject.DAL\\Data\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\Data\\Models\\Category.cs",
+              "RelativeToolTip": "BookStoreProject.DAL\\Data\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:13:12.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
