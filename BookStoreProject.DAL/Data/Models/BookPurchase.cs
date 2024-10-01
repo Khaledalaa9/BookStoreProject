@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineBookStore.DAL.Data.Models
+namespace BookStoreProject.DAL.Data.Models
 {
     public class BookPurchase
     {

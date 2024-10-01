@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OnlineBookStore.DAL.Data.Models;
+using BookStoreProject.DAL.Data.Models;
 
-namespace OnlineBookStore.DAL.Data
+namespace BookStoreProject.DAL.Data
 {
     public class BookStoreDbContext : DbContext
     {
