@@ -168,6 +168,7 @@ C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
@@ -394,4 +395,3 @@ C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\BookStoreProject.MVC.pdb
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\BookStoreProject.MVC.genruntimeconfig.cache
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\ref\BookStoreProject.MVC.dll
-C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll

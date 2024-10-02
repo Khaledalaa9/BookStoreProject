@@ -13,13 +13,9 @@ namespace BookStoreProject.MVC.Controllers
 {
     public class SuppliersController : Controller
     {
-        // private readonly BookStoreDbContext _context;
+      
         private readonly IBaseRepository<Supplier> _supplierRepo;
 
-        //public SuppliersController(BookStoreDbContext context)
-        //{
-        //    _context = context;
-        //}
 
         public SuppliersController(IBaseRepository<Supplier> supplierRepo)
         {
