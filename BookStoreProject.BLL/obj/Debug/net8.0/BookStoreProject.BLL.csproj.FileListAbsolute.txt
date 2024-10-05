@@ -13,3 +13,19 @@ C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\refint\BookStoreProject.BLL.dll
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.pdb
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\ref\BookStoreProject.BLL.dll
+F:\start  .net\Graduation\BookStoreProject.BLL\bin\Debug\net8.0\BookStoreProject.BLL.deps.json
+F:\start  .net\Graduation\BookStoreProject.BLL\bin\Debug\net8.0\BookStoreProject.BLL.dll
+F:\start  .net\Graduation\BookStoreProject.BLL\bin\Debug\net8.0\BookStoreProject.BLL.pdb
+F:\start  .net\Graduation\BookStoreProject.BLL\bin\Debug\net8.0\BookStoreProject.DAL.dll
+F:\start  .net\Graduation\BookStoreProject.BLL\bin\Debug\net8.0\BookStoreProject.DAL.pdb
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.csproj.AssemblyReference.cache
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.GeneratedMSBuildEditorConfig.editorconfig
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.AssemblyInfoInputs.cache
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.AssemblyInfo.cs
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.csproj.CoreCompileInputs.cache
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.sourcelink.json
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\BookStor.E6693A41.Up2Date
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.dll
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\refint\BookStoreProject.BLL.dll
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.pdb
+F:\start  .net\Graduation\BookStoreProject.BLL\obj\Debug\net8.0\ref\BookStoreProject.BLL.dll

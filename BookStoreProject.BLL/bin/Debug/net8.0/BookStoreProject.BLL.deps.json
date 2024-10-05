@@ -556,10 +556,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
         },
         "runtime": {
-          "BookStoreProject.DAL.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BookStoreProject.DAL.dll": {}
         }
       }
     }

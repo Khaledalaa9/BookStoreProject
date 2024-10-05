@@ -848,10 +848,7 @@
           "BookStoreProject.DAL": "1.0.0"
         },
         "runtime": {
-          "BookStoreProject.BLL.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BookStoreProject.BLL.dll": {}
         }
       },
       "BookStoreProject.DAL/1.0.0": {
@@ -859,10 +856,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
         },
         "runtime": {
-          "BookStoreProject.DAL.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "BookStoreProject.DAL.dll": {}
         }
       }
     }

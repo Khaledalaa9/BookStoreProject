@@ -12,3 +12,18 @@ C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.pdb
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.genruntimeconfig.cache
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\ref\BookStoreProject.DAL.dll
+F:\start  .net\Graduation\BookStoreProject.DAL\bin\Debug\net8.0\BookStoreProject.DAL.deps.json
+F:\start  .net\Graduation\BookStoreProject.DAL\bin\Debug\net8.0\BookStoreProject.DAL.runtimeconfig.json
+F:\start  .net\Graduation\BookStoreProject.DAL\bin\Debug\net8.0\BookStoreProject.DAL.dll
+F:\start  .net\Graduation\BookStoreProject.DAL\bin\Debug\net8.0\BookStoreProject.DAL.pdb
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.csproj.AssemblyReference.cache
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.AssemblyInfoInputs.cache
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.AssemblyInfo.cs
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.csproj.CoreCompileInputs.cache
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.sourcelink.json
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.dll
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\refint\BookStoreProject.DAL.dll
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.pdb
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.genruntimeconfig.cache
+F:\start  .net\Graduation\BookStoreProject.DAL\obj\Debug\net8.0\ref\BookStoreProject.DAL.dll
