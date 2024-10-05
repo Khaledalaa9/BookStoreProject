@@ -18,7 +18,7 @@ namespace OnlineBookStore.DAL.Data.Models
         //public int? DiscountCouponID { get; set; }
         public DiscountCoupon DiscountCoupon { get; set; }
 
-        public int UserID { get; set; }
+      //  public int UserID { get; set; }
         public User User { get; set; }
 
         public ICollection<OrderDetails> Details { get; set; } = new HashSet<OrderDetails>();

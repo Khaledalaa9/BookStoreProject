@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +11,14 @@ namespace OnlineBookStore.DAL.Data.Models
     {
         SuperAdmin,Admin,Customer
     }
-    public class User
-    {
-        public int Id { get; set; }
+    public class User : IdentityUser
+	{
+      /*  public int Id { get; set; }
         public string UserName { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
+        public string Password { get; set; }*/
         public string Address { get; set; }
-        public int ContactNumber { get; set; }
+       // public int ContactNumber { get; set; }
         public UserType UserType { get; set; }
 
         public ICollection<Order> Orders { get; set; }= new HashSet<Order>();
