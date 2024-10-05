@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj": {}
+    "F:\\start  .net\\Graduation\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj": {
+    "F:\\start  .net\\Graduation\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
+        "projectUniqueName": "F:\\start  .net\\Graduation\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
         "projectName": "BookStoreProject.DAL",
-        "projectPath": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
-        "packagesPath": "C:\\Users\\khale\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\khale\\source\\repos\\BookStoreProject\\BookStoreProject.DAL\\obj\\",
+        "projectPath": "F:\\start  .net\\Graduation\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "F:\\start  .net\\Graduation\\BookStoreProject.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\khale\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
