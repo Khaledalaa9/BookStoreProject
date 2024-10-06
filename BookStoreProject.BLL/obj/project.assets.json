@@ -2683,11 +2683,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\start  .net\\New folder\\Graduation\\BookStoreProject.BLL\\BookStoreProject.BLL.csproj",
+      "projectUniqueName": "F:\\start  .net\\New folder\\graduation\\BookStoreProject.BLL\\BookStoreProject.BLL.csproj",
       "projectName": "BookStoreProject.BLL",
-      "projectPath": "F:\\start  .net\\New folder\\Graduation\\BookStoreProject.BLL\\BookStoreProject.BLL.csproj",
+      "projectPath": "F:\\start  .net\\New folder\\graduation\\BookStoreProject.BLL\\BookStoreProject.BLL.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "F:\\start  .net\\New folder\\Graduation\\BookStoreProject.BLL\\obj\\",
+      "outputPath": "F:\\start  .net\\New folder\\graduation\\BookStoreProject.BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2705,8 +2705,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\start  .net\\New folder\\Graduation\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj": {
-              "projectPath": "F:\\start  .net\\New folder\\Graduation\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj"
+            "F:\\start  .net\\New folder\\graduation\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj": {
+              "projectPath": "F:\\start  .net\\New folder\\graduation\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj"
             }
           }
         }
