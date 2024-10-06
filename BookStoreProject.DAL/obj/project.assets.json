@@ -4194,11 +4194,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\start  .net\\final project\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
+      "projectUniqueName": "F:\\start  .net\\New folder\\Graduation\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
       "projectName": "BookStoreProject.DAL",
-      "projectPath": "F:\\start  .net\\final project\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
+      "projectPath": "F:\\start  .net\\New folder\\Graduation\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "F:\\start  .net\\final project\\BookStoreProject.DAL\\obj\\",
+      "outputPath": "F:\\start  .net\\New folder\\Graduation\\BookStoreProject.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
