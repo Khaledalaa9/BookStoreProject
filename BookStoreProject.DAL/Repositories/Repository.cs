@@ -26,6 +26,7 @@ namespace BookStoreProject.DAL.Repositories
             _context.SaveChanges();
             return entity;
         }
+
         //------------------------------------ Delete--------------------------
         public void Delete(T entity)
         {

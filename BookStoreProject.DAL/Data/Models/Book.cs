@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlineBookStore.DAL.Data.Models
+namespace BookStoreProject.DAL.Data.Models
 {
     public class Book
     {
@@ -24,7 +25,8 @@ namespace OnlineBookStore.DAL.Data.Models
         public int PublisherID { get; set; }
         public Publisher Publisher { get; set; }
 
-        public int CartID { get; set; }
+        
+        public int? CartID { get; set; }
         public Cart Cart { get; set; }
 
 

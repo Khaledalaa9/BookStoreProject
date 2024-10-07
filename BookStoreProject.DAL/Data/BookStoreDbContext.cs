@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OnlineBookStore.DAL.Data.Models;
+using BookStoreProject.DAL.Data.Models;
 
 namespace BookStoreProject.DAL.Data
 {

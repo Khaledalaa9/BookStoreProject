@@ -4,6 +4,7 @@ using BookStoreProject.DAL.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStoreProject.DAL.Migrations
 {
     [DbContext(typeof(BookStoreDbContext))]
-    partial class BookStoreDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241002190401_addBookid")]
+    partial class addBookid
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -52,22 +55,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("BookOrder");
                 });
 
-            modelBuilder.Entity("BookPurchase", b =>
-                {
-                    b.Property<int>("BookId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PurchasesId")
-                        .HasColumnType("int");
-
-                    b.HasKey("BookId", "PurchasesId");
-
-                    b.HasIndex("PurchasesId");
-
-                    b.ToTable("BookPurchase");
-                });
-
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Author", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Author", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -88,7 +76,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("Authors");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Book", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Book", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -96,7 +84,7 @@ namespace BookStoreProject.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("CartID")
+                    b.Property<int>("CartID")
                         .HasColumnType("int");
 
                     b.Property<int>("CategoryID")
@@ -144,7 +132,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("Books");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.BookAuthor", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.BookAuthor", b =>
                 {
                     b.Property<int>("BookId")
                         .HasColumnType("int");
@@ -159,7 +147,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("BookAuthors");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.BookOrder", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.BookOrder", b =>
                 {
                     b.Property<int>("BookId")
                         .HasColumnType("int");
@@ -174,7 +162,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("BookOrders");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.BookPurchase", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.BookPurchase", b =>
                 {
                     b.Property<int>("BookId")
                         .HasColumnType("int");
@@ -189,7 +177,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("BookPurchases");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Cart", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Cart", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -210,7 +198,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("Carts");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Category", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -227,7 +215,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.DiscountCoupon", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.DiscountCoupon", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -259,7 +247,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("DiscountCoupons");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Order", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -287,7 +275,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.OrderDetails", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.OrderDetails", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -311,7 +299,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("OrderDetails");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Publisher", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Publisher", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -339,13 +327,16 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("Publishers");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Purchase", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Purchase", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("PurchaseDate")
                         .HasColumnType("datetime2");
@@ -358,12 +349,14 @@ namespace BookStoreProject.DAL.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BookId");
+
                     b.HasIndex("SupplerID");
 
                     b.ToTable("Purchases");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Supplier", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Supplier", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -387,7 +380,7 @@ namespace BookStoreProject.DAL.Migrations
                     b.ToTable("Suppliers");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.User", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -424,13 +417,13 @@ namespace BookStoreProject.DAL.Migrations
 
             modelBuilder.Entity("AuthorBook", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Author", null)
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Author", null)
                         .WithMany()
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Book", null)
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Book", null)
                         .WithMany()
                         .HasForeignKey("BooksId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -439,47 +432,34 @@ namespace BookStoreProject.DAL.Migrations
 
             modelBuilder.Entity("BookOrder", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Book", null)
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Book", null)
                         .WithMany()
                         .HasForeignKey("BooksId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Order", null)
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Order", null)
                         .WithMany()
                         .HasForeignKey("OrdersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("BookPurchase", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Book", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Book", null)
-                        .WithMany()
-                        .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Purchase", null)
-                        .WithMany()
-                        .HasForeignKey("PurchasesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Book", b =>
-                {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Cart", "Cart")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Cart", "Cart")
                         .WithMany("Books")
-                        .HasForeignKey("CartID");
+                        .HasForeignKey("CartID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Category", "Category")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Category", "Category")
                         .WithMany("Books")
                         .HasForeignKey("CategoryID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Publisher", "Publisher")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Publisher", "Publisher")
                         .WithMany("Books")
                         .HasForeignKey("PublisherID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -492,15 +472,15 @@ namespace BookStoreProject.DAL.Migrations
                     b.Navigation("Publisher");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.BookAuthor", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.BookAuthor", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Author", "Author")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Author", "Author")
                         .WithMany("BookAuthors")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Book", "Book")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Book", "Book")
                         .WithMany("BookAuthors")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -511,15 +491,15 @@ namespace BookStoreProject.DAL.Migrations
                     b.Navigation("Book");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.BookOrder", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.BookOrder", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Book", "Book")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Book", "Book")
                         .WithMany("BookOrders")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Order", "Order")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Order", "Order")
                         .WithMany("BookOrders")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -530,15 +510,15 @@ namespace BookStoreProject.DAL.Migrations
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.BookPurchase", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.BookPurchase", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Book", "Book")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Book", "Book")
                         .WithMany("BookPurchases")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Purchase", "Purchase")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Purchase", "Purchase")
                         .WithMany()
                         .HasForeignKey("PurchaseId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -549,9 +529,9 @@ namespace BookStoreProject.DAL.Migrations
                     b.Navigation("Purchase");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Cart", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Cart", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.User", "User")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.User", "User")
                         .WithMany("Carts")
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -560,20 +540,20 @@ namespace BookStoreProject.DAL.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.DiscountCoupon", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.DiscountCoupon", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Order", "Order")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Order", "Order")
                         .WithOne("DiscountCoupon")
-                        .HasForeignKey("BookStoreProject.DAL.Data.Models.DiscountCoupon", "OrderID")
+                        .HasForeignKey("OnlineBookStore.DAL.Data.Models.DiscountCoupon", "OrderID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Order", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Order", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.User", "User")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.User", "User")
                         .WithMany("Orders")
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -582,9 +562,9 @@ namespace BookStoreProject.DAL.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.OrderDetails", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.OrderDetails", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Order", "Order")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Order", "Order")
                         .WithMany("Details")
                         .HasForeignKey("OrderID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -593,42 +573,52 @@ namespace BookStoreProject.DAL.Migrations
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Purchase", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Purchase", b =>
                 {
-                    b.HasOne("BookStoreProject.DAL.Data.Models.Supplier", "Suppler")
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Book", "Book")
+                        .WithMany("Purchases")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineBookStore.DAL.Data.Models.Supplier", "Suppler")
                         .WithMany("Purchases")
                         .HasForeignKey("SupplerID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Book");
+
                     b.Navigation("Suppler");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Author", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Author", b =>
                 {
                     b.Navigation("BookAuthors");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Book", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Book", b =>
                 {
                     b.Navigation("BookAuthors");
 
                     b.Navigation("BookOrders");
 
                     b.Navigation("BookPurchases");
+
+                    b.Navigation("Purchases");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Cart", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Cart", b =>
                 {
                     b.Navigation("Books");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Category", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Category", b =>
                 {
                     b.Navigation("Books");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Order", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Order", b =>
                 {
                     b.Navigation("BookOrders");
 
@@ -638,17 +628,17 @@ namespace BookStoreProject.DAL.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Publisher", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Publisher", b =>
                 {
                     b.Navigation("Books");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.Supplier", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.Supplier", b =>
                 {
                     b.Navigation("Purchases");
                 });
 
-            modelBuilder.Entity("BookStoreProject.DAL.Data.Models.User", b =>
+            modelBuilder.Entity("OnlineBookStore.DAL.Data.Models.User", b =>
                 {
                     b.Navigation("Carts");
 
