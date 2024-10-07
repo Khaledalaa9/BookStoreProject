@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BookStoreProject.DAL.Data;
-using OnlineBookStore.DAL.Data.Models;
+using BookStoreProject.DAL.Data.Models;
 using BookStoreProject.BLL.Managers;
 
 namespace BookStoreProject.MVC.Controllers

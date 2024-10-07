@@ -1,10 +1,10 @@
-﻿@model OnlineBookStore.DAL.Data.Models.Supplier
+﻿@model BookStoreProject.DAL.Data.Models.Supplier
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Supplier Details</h1>
 
 <div>
     <h4>Supplier</h4>
@@ -31,6 +31,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.id">Update</a> |
+    <a asp-action="Index">Back to Supplier List</a>
 </div>

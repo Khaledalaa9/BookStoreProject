@@ -119,6 +119,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Abstractions": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -136,6 +140,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.5, )"
+            },
+            "ServiceStack.Interfaces": {
+              "target": "Package",
+              "version": "[8.4.0, )"
             }
           },
           "imports": [
@@ -187,9 +195,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Ali\\Source\\Repos\\BookStoreProject\\BookStoreProject.BLL\\BookStoreProject.BLL.csproj": {
-                "projectPath": "C:\\Users\\Ali\\Source\\Repos\\BookStoreProject\\BookStoreProject.BLL\\BookStoreProject.BLL.csproj"
-              },
               "C:\\Users\\Ali\\Source\\Repos\\BookStoreProject\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj": {
                 "projectPath": "C:\\Users\\Ali\\Source\\Repos\\BookStoreProject\\BookStoreProject.DAL\\BookStoreProject.DAL.csproj"
               }
@@ -211,6 +216,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -226,6 +235,10 @@
               "version": "[8.0.8, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.5, )"
             }

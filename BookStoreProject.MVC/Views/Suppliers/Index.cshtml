@@ -1,17 +1,17 @@
-﻿@model IEnumerable<OnlineBookStore.DAL.Data.Models.Supplier>
+﻿@model IEnumerable<BookStoreProject.DAL.Data.Models.Supplier>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Supplier List</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Add New Supplier</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
+<table  class="table table table-striped">
+    <thead class="table-primary">
+        <tr >
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.TelephoneNumber)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-success">Update</a> |
+                <a asp-action="Details" asp-route-id="@item.id" class="btn btn-primary">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-danger">Delete</a>
             </td>
         </tr>
 }
