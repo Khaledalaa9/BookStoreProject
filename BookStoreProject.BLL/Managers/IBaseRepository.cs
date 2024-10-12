@@ -16,7 +16,10 @@ using System.Threading.Tasks;
         T Find(Expression<Func<T, bool>> match);
         Task<T> Add(T entity);
         T Update(T entity);
+        public IQueryable Update(Expression<Func<T, bool>> match);
         void Delete(T entity);
+
+        public IQueryable<T> GetAllQ();
 
     }
 }
