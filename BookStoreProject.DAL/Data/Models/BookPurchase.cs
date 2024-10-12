@@ -10,10 +10,10 @@ namespace BookStoreProject.DAL.Data.Models
     public class BookPurchase
     {
         public int BookId { get; set; }
-        public Book Book { get; set; }
+        public Book ?Book { get; set; }
 
         public int PurchaseId { get; set; }
-        public Purchase Purchase { get; set; }
+        public Purchase ?Purchase { get; set; }
 
 
     }

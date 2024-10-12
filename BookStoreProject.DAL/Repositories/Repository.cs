@@ -24,6 +24,7 @@ namespace BookStoreProject.DAL.Repositories
         {
             await _context.Set<T>().AddAsync(entity);
             _context.SaveChanges();
+
             return entity;
         }
 
@@ -44,6 +45,12 @@ namespace BookStoreProject.DAL.Repositories
         {
             return _context.Set<T>().ToList();
         }
+
+        public IQueryable<T> GetAllQ()
+        {
+            return _context.Set<T>();
+        }
+
         //------------------------------------ GetList--------------------------
         public async Task<IEnumerable<T>> GetAllAsync()
         {
@@ -67,5 +74,21 @@ namespace BookStoreProject.DAL.Repositories
 
             return entity;
         }
+
+       
+
+        public IQueryable Update(Expression<Func<T, bool>> match)
+        {
+           return  _context.Set<T>().Where(match);
+              //  .ExecuteUpdate(match2).SetProperty(u => u.Password, "NewPassword"));
+            //   dbContext.Users
+            //.Where(u => u.Id == someId)
+            //.ExecuteUpdate(b => b.SetProperty(u => u.Password, "NewPassword")
+            //);
+           
+        }
+
+    
+
     }
 }
