@@ -11,6 +11,7 @@ using BookStoreProject.BLL;
 using BookStoreProject.DAL.ViewModels;
 using BookStoreProject.BLL.Managers;
 using BookStoreProject.DAL.Migrations;
+using System.Net;
 
 namespace BookStoreProject.MVC.Controllers
 {
@@ -20,28 +21,51 @@ namespace BookStoreProject.MVC.Controllers
         private readonly IBaseRepository<Purchase> _purchaseRepo;
         private readonly IBaseRepository<Book> _booksRepo;
         private readonly IBaseRepository<Supplier> _supplierRepo;
-        
+        private readonly IBaseRepository<BookPurchase> _BookPurchase;
 
-        public PurchasesController(IBaseRepository<Purchase> purchaseRepo, IBaseRepository<Book> bookRepo, IBaseRepository<Supplier> supplierRepo)
+
+        public PurchasesController(IBaseRepository<Purchase> purchaseRepo, IBaseRepository<Book> bookRepo, IBaseRepository<Supplier> supplierRepo, IBaseRepository<BookPurchase> bookPurchase)
         {
             _purchaseRepo = purchaseRepo;
             _booksRepo = bookRepo;
             _supplierRepo = supplierRepo;
+            _BookPurchase = bookPurchase;
            
         }
 
-        //public PurchasesController(BookStoreDbContext context)
-        //{
-        //    _context = context;
-        //}
+        
 
         // GET: Purchases
         public async Task<IActionResult> Index()
         {
+
+
+            var res = (from pur in _purchaseRepo.GetAllQ()
+                       join sup in _supplierRepo.GetAllQ()
+                       on pur.SupplerID equals sup.id
+                       join bokpurchase in _BookPurchase.GetAllQ()
+                       on pur.Id equals bokpurchase.PurchaseId
+                       join bok in _booksRepo.GetAllQ()
+                       on bokpurchase.BookId equals bok.Id
+
+                       select new PurchaseOrdersList
+                       {
+                           SupplierName = sup.Name,
+                           BookName= bok.Title ,
+                           purchaseDate = pur.PurchaseDate,
+                           Q = pur.Quantity
+
+                       }
+
+                       ).ToList();
+
+           
+
+
             //var bookStoreDbContext = _context.Purchases.Include(p => p.Suppler);
             //return View(await bookStoreDbContext.ToListAsync());
 
-            return NotFound();
+            return View(res);
         }
 
         // GET: Purchases/Details/5
@@ -66,9 +90,7 @@ namespace BookStoreProject.MVC.Controllers
         // GET: Purchases/Create
         public IActionResult Create()
         {
-            //ViewData["SupplerID"] = new SelectList(_context.Suppliers, "id", "Address");
-            //return View();
-
+           
 
             PurchaseBookVM purchaseBookVM = new PurchaseBookVM()
             {
@@ -87,8 +109,7 @@ namespace BookStoreProject.MVC.Controllers
         }
 
         // POST: Purchases/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(PurchaseBookVM purchasevm)
@@ -105,11 +126,33 @@ namespace BookStoreProject.MVC.Controllers
                     SupplerID = purchasevm.Purchase.SupplerID
 
                 };
+                //save purchase order
                 _purchaseRepo.Add(purchase);
+
+               int PurchaseOrderID= (int) purchase.GetType().GetProperty("Id").GetValue(purchase, null);
+
+                BookPurchase bookPurchaseOrder = new BookPurchase()
+                {
+                    BookId = purchasevm.Purchase.BookId,
+                    PurchaseId = PurchaseOrderID
+
+                };
+                 //save purchaseOrderID with BookID
+                _BookPurchase.Add(bookPurchaseOrder);
+
+
+
+                //update quantity
+                var bk = _booksRepo.Find(a => a.Id == purchasevm.Purchase.BookId);
+                bk.StockQuantity = bk.StockQuantity+purchasevm.Purchase.Quantity;
+                _booksRepo.Update(bk);
+
+
+         //   var res =  _booksRepo.GetAllAsync().Where(b => b.Id == purchasevm.Purchase.BookId).ExecuteUpdate
 
             }
 
-            return RedirectToAction("Home/index");
+            return RedirectToAction("index");
         }
 
         // GET: Purchases/Edit/5

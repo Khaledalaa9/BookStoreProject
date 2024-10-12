@@ -138,13 +138,13 @@ C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\BookStoreProject.MVC.pdb
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\BookStoreProject.MVC.genruntimeconfig.cache
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\ref\BookStoreProject.MVC.dll
-C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\BookStoreProject.MVC.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\appsettings.json
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\BookStoreProject.MVC.staticwebassets.runtime.json
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\BookStoreProject.MVC.exe
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\BookStoreProject.MVC.deps.json
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\BookStoreProject.MVC.runtimeconfig.json
+C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\BookStoreProject.MVC.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\BookStoreProject.MVC.pdb
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -511,6 +511,7 @@ C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\NuGet.ProjectModel.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\NuGet.Protocol.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\NuGet.Versioning.dll
+C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\ServiceStack.Interfaces.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -706,4 +707,3 @@ C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\BookStoreProject.MVC.pdb
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\BookStoreProject.MVC.genruntimeconfig.cache
 C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\ref\BookStoreProject.MVC.dll
-C:\Users\Ali\Source\Repos\BookStoreProject\BookStoreProject.MVC\bin\Debug\net8.0\ServiceStack.Interfaces.dll
