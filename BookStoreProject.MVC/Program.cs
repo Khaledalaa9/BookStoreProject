@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using BookStoreProject.DAL.Data;
+using BookStoreProject.DAL.Repositories.OrderRepository;
+using BookStoreProject.BLL.Managers.OrderManager;
 
 namespace BookStoreProject.MVC
 {
@@ -14,7 +16,12 @@ namespace BookStoreProject.MVC
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<BookStoreDbContext>(options =>
                 options.UseSqlServer(connectionString));
+
+            builder.Services.AddScoped<IOrderManager, OrderManager>();
+            builder.Services.AddScoped<IOrderRepo, OrderRepo>();
+            builder.Services.AddScoped<IOrderManager, OrderManager>();
             var app = builder.Build();
+
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

@@ -1,0 +1,124 @@
+﻿@model IEnumerable<BookStoreProject.BLL.ViewModels.OrderViewModels.OrderReadVM>
+
+<div class="container my-5">
+    <h1 class="mb-4">Your Orders</h1>
+
+    <ul class="nav nav-tabs mb-4">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Orders</a>
+        </li>
+      @*   <li class="nav-item">
+            <a class="nav-link" href="#">Buy Again</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Not Yet Dispatched</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Cancelled Orders</a>
+        </li> *@
+    </ul>
+
+    <div class="alert alert-info">
+        <span class="font-weight-bold">@Model.Count()</span> order(s) placed
+    </div>
+
+    @foreach (var order in Model)
+    {
+        <div class="card shadow-sm mb-4">
+            <div class="card-header bg-light">
+                <div class="row">
+                    <div class="col-md-3">
+                        <small class="text-muted">ORDER PLACED</small><br>
+                        <span class="font-weight-bold">@order.OrderDate.ToString("dd MMMM yyyy")</span>
+                    </div>
+                    <div class="col-md-3">
+                        <small class="text-muted">TOTAL</small><br>
+                        <span class="font-weight-bold">EGP @order.TotalAmount.ToString("N2")</span>
+                    </div>
+                    <div class="col-md-3">
+                        <small class="text-muted">SHIP TO</small><br>
+                        <span class="font-weight-bold">@order.ShippingAddress</span>
+                    </div>
+                    <div class="col-md-3 text-right">
+                        <small class="text-muted">ORDER # @order.Id</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="card-text text-success"><i class="fas fa-check-circle mr-2"></i>Your package was delivered. It was handed directly to a resident.</p>
+                @foreach (var item in order.BookReadVMs)
+                {
+                    <div class="row mt-4 align-items-center">
+                        <div class="col-md-2">
+                            <img src="@item.ImgUrl" alt="@item.Title" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-10">
+                            <h5 class="mb-2">@item.Title</h5>
+                            <p class="text-muted">@item.Description</p>
+                            @foreach (var details in order.OrderDetailsReadVMs)
+                            {
+                                <div class="mt-2">
+                                    <small class="text-muted">Quantity: @details.Quantity</small>
+                                    <small class="text-muted ml-3">Price: EGP @details.Price.ToString("N2")</small>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <hr class="my-3">
+                }
+            </div>
+            <div class="card-footer bg-white">
+                <button class="btn btn-warning text-black ">
+                    <i class="fas fa-redo mr-6"></i>Buy it again
+                </button>
+                <button >
+                   <a asp-controller="Orders" asp-action="Delete"
+                       asp-route-id="@order.Id" class="btn btn-danger text-black ">
+                        Delete From My Order
+                        </a>
+                </button>
+                <button>
+                    <a asp-controller="Orders" asp-action="GetById" asp-route-id="@order.Id" class="btn btn-primary text-black ">View Details</a>
+                </button>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border: none;
+        transition: all 0.3s;
+    }
+
+        .card:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+
+    .nav-tabs .nav-link {
+        color: #495057;
+    }
+
+        .nav-tabs .nav-link.active {
+            font-weight: bold;
+            border-bottom: 2px solid #007bff;
+        }
+
+    .btn-warning {
+        background-color: #FFD814;
+        border-color: #FCD200;
+        color: #000;
+    }
+
+        .btn-warning:hover {
+            background-color: #F7CA00;
+            border-color: #F0B800;
+        }
+</style>
+
+<!-- Add this to your _Layout.cshtml or include in the page -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">

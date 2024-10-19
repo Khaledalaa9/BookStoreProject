@@ -24,6 +24,47 @@ namespace BookStoreProject.DAL.Data
                 .WithOne(dc => dc.Order)
                 .HasForeignKey<DiscountCoupon>(dc => dc.OrderID);
 
+            modelBuilder.Entity<User>().HasData(
+         new User
+         {
+             Id = 1,
+             UserName = "superadmin",
+             Email = "superadmin@example.com",
+             Password = "SuperAdmin123",  // استخدم تقنية تشفير كلمات المرور المناسبة هنا
+             Address = "HQ Address",
+             ContactNumber = 123456789,
+             UserType = UserType.SuperAdmin
+         },
+         new User
+         {
+             Id = 2,
+             UserName = "adminuser",
+             Email = "admin@example.com",
+             Password = "AdminUser123",  // استخدم تقنية تشفير كلمات المرور المناسبة هنا
+             Address = "Admin Office",
+             ContactNumber = 987654321,
+             UserType = UserType.Admin
+         },
+         new User
+         {
+             Id = 3,
+             UserName = "customer1",
+             Email = "customer1@example.com",
+             Password = "Customer123",  // استخدم تقنية تشفير كلمات المرور المناسبة هنا
+             Address = "123 Customer Street",
+             ContactNumber = 456789123,
+             UserType = UserType.Customer
+         }
+     );
+
+   
+            
+
+
+
+
+
+
             base.OnModelCreating(modelBuilder);
 
         }

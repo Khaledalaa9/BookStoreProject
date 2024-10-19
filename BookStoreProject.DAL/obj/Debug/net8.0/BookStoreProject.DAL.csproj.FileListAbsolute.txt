@@ -12,3 +12,4 @@ C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.pdb
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.genruntimeconfig.cache
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\ref\BookStoreProject.DAL.dll
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.DAL\obj\Debug\net8.0\BookStoreProject.DAL.sourcelink.json

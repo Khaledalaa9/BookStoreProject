@@ -15,14 +15,14 @@ namespace BookStoreProject.DAL.Data.Models
         public int TotalAmount { get; set; }
 
 
-        //public int? DiscountCouponID { get; set; }
-        public DiscountCoupon DiscountCoupon { get; set; }
+      //  public int? DiscountCouponID { get; set; }
+        public DiscountCoupon? DiscountCoupon { get; set; }
 
         public int UserID { get; set; }
         public User User { get; set; }
 
         public ICollection<OrderDetails> Details { get; set; } = new HashSet<OrderDetails>();
         public ICollection<Book> Books { get; set; } = new HashSet<Book>();
-        public ICollection<BookOrder> BookOrders { get; set; } = new HashSet<BookOrder>();
+        //public ICollection<BookOrder> BookOrders { get; set; } = new HashSet<BookOrder>();
     }
 }

@@ -138,3 +138,4 @@ C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\BookStoreProject.MVC.pdb
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\BookStoreProject.MVC.genruntimeconfig.cache
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\ref\BookStoreProject.MVC.dll
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.MVC\obj\Debug\net8.0\BookStoreProject.MVC.sourcelink.json

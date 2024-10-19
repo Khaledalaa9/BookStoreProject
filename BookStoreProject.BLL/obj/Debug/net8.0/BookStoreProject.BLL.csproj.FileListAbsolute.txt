@@ -13,3 +13,4 @@ C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\refint\BookStoreProject.BLL.dll
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.pdb
 C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\ref\BookStoreProject.BLL.dll
+C:\Users\khale\source\repos\BookStoreProject\BookStoreProject.BLL\obj\Debug\net8.0\BookStoreProject.BLL.sourcelink.json
